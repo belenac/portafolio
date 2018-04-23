@@ -1,0 +1,74 @@
+@charset "UTF-8";
+*{ box-sizing:border-box;}
+body{text-align: center;font-family: "Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, sans-serif;}
+.contenedor{width:80%;margin:0 auto;}
+input, textarea{font-size:12px; padding:5px;}
+/*Tabla*/
+table{width:100%; border-collapse:collapse;}
+table img{ width:50%;}
+thead{background-color:darkblue; color:white;}
+td{border:1px solid blue;}
+tbody{text-align:center;}
+/*Menu*/
+nav{ width:100%; margin:0 auto;}
+nav li{ width:15%; display:inline-block; background-color:darkblue; padding:10px 0;}
+nav a{ text-decoration:none; color:white;}
+nav li:hover{ background-color:black;}
+/*Contacto*/
+.contacto form{ width: 80%; background-color: #00a1de; margin: 0 auto; padding: 20px; text-align: left;}
+.contacto input{ width: 100%; border: none; margin: 10px 0;}
+.contacto textarea{ width: 100%; border: none; min-height: 100px; margin: 10px 0;}
+.contacto .enviar{ width: 20%; padding: 10px; background-color: darkblue; color: white; border-radius: 20px;}
+/*registro*/
+.registro form{ width: 80%; background-color: #00a1de; margin: 0 auto; padding: 20px; text-align: left;}
+.registro input{ width: 100%; border: none; margin: 10px 0;}
+.registro textarea{ width: 100%; border: none; min-height: 100px; margin: 10px 0;}
+.registro .enviar{ width: 20%; padding: 10px; background-color: darkblue; color: white; border-radius: 20px;}
+/*inicio*/
+.inicio form{ width: 40%; background-color: #00a1de; margin: 0 auto; padding: 20px;}
+.inicio input{ width: 100%; border: none; margin: 10px 0;}
+.inicio .enviar{ width: 20%; padding: 10px; background-color: darkblue; color: white; border-radius: 20px;}
+/*Boleta*/
+.boleta{width: 80%; margin: 0 auto;}
+.boleta th{ background-color: darkblue; color: white; padding: 5px 0;}
+.boleta .envio{ color: blue;}
+.boleta .descuento{ color: red;}
+.boleta .sub-total{ color: purple;}
+.boleta .iva{ color: orange;}
+.boleta .total{ color: green;}
+/*Ficha*/
+.ficha .imagen{ width: 20%; float: left; border: 2px solid darkblue; margin-top: 20px;}
+.ficha img{ width: 100%;}
+.ficha .info{ width: 60%; float: left; text-align: left; padding: 0 20px;}
+.ficha .info-2{ width: 20%; float: left;}
+.ficha .compra{ text-align: right; width: 100%; clear: both;}
+/*Ficha noticia*/
+.ficha-2 .info{ width:60%; padding:10px; float:left;}
+.ficha-2 h2{ color:darkblue;}
+.ficha-2 em{ color:gray;}
+.img-noticia{ width:40%;}
+.img-noticia img{ width:100%; float:left;}
+
+/*Noticia*/
+.noticia a{color:white;}
+table tr, table th{ padding:5px;}
+
+/*ADM*/
+/*Usuarios*/
+.usuarios{width: 80%; margin: 0 auto;}
+.usuarios th{ background-color: darkblue; color: white; padding: 5px 0;}
+/*Usuario Modificar*/
+.usuarios-modificar form{ width: 80%; background-color: #00a1de; margin: 0 auto; padding: 20px; text-align: left;}
+.usuarios-modificar input{ width: 100%; border: none; margin: 10px 0;}
+.usuarios-modificar textarea{ width: 100%; border: none; min-height: 100px; margin: 10px 0;}
+.usuarios-modificar .enviar{ width: 20%; padding: 10px; background-color: darkblue; color: white; border-radius: 20px;}
+
+/*Productos*/
+/*Productos Modificar*/
+.productos-modificar form{ width: 80%; background-color: #00a1de; margin: 0 auto; padding: 20px; text-align: left;}
+.productos-modificar input{ width: 100%; border: none; margin: 10px 0;}
+.productos-modificar textarea{ width: 100%; border: none; min-height: 100px; margin: 10px 0;}
+.productos-modificar .enviar{ width: 20%; padding: 10px; background-color: darkblue; color: white; border-radius: 20px;}
+
+/*footer*/
+footer{ clear: both;}

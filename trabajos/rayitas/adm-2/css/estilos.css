@@ -1,0 +1,249 @@
+@charset "UTF-8";
+*{
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body{
+	font-family:Helvetica, Arial, sans-serif; 
+	font-weight:200;
+	}
+	
+table{
+	border-collapse:collapse; 
+	margin: 20px auto;
+	}
+	
+table,th,td{
+	border:1px solid darkred;
+	}
+	
+th{
+	background-color:darkblue;
+	color:#fff;
+	}
+
+h1{
+	color:darkblue;
+    padding-top: 10px;
+	}
+
+h2{
+	font-weight:400; 
+	}
+
+nav{
+    float: left;
+    width: 70%;
+    margin: 0 15%;
+	}
+
+li{
+	list-style-type:none; 
+	width:33.3%;
+    float: left;
+	background-color: darkblue; 
+	text-align:center; 
+	padding: 5px 5px;
+	}
+	
+a{
+	text-decoration:none; 
+	color:#ffffff;
+	}
+	
+em{
+	color:#7F7F7F;
+	float:left;
+	}
+	
+table a{ 
+	color:black;
+	}
+
+.contenedor{
+    width: 80%;
+    margin: 0 auto;
+}
+
+footer{
+	margin-top:10px;
+	padding:5px; 
+	text-align:center; 
+	clear:both;
+	}
+	
+.cuadrado{ 
+	width:20%;
+	margin:20px 0 0 50px; 
+	float:left; 
+    color:#fff; 
+	text-align:center; 
+	border: 1px solid blue;
+	}
+	
+.ficha{ 
+	width:70%; 
+	border:1px solid black; 
+	float:left; 
+	margin:20px 0 20px 20px; 
+	padding:20px;
+	}
+.ficha-usuario{ 
+	width:50%;
+	margin:10px auto;
+	padding:20px;
+	}
+	
+.caja-1{ 
+	float:left;
+	}
+	
+.caja-2{ 
+	float:right; 
+	text-align:right;
+	}
+	
+.caja-3{ 
+	clear:both; 
+	text-align:right;
+	}
+
+.caja-3 input{
+    width: 70px;
+}
+
+.caja-3 .cantidad{ 
+	width:50px;
+    text-align: center;
+	}
+
+.contenedor-a{
+	width:100%; 
+	height:50px;
+	}
+	
+.volver{
+	border:1px solid black; 
+	color:black; 
+	padding:10px; 
+	margin:20px;
+	}
+	
+.paginacion{ 
+	text-align:center; 
+	margin: 3px;
+	}
+	
+.paginacion a{
+	color:black;
+	}
+	
+.derecha{
+	text-align:right;
+}
+
+.foto-index{
+	float:left;
+	margin-right:5px;
+}
+
+.boleta{
+	width:80%;
+}
+
+.centro{
+	text-align:center;
+	}
+
+.fondo-rojo{
+    background-color: firebrick;
+    color: white;
+    font-weight: 400;
+}
+
+.fondo-verde{
+    background-color: darkgreen;
+    color: white;
+    font-weight: 400;
+}
+.fondo-azul{
+    background-color: #6abbff;
+    color: white;
+    font-weight: 400;
+}
+.fondo-rojo-2{
+    background-color: #ff8383;
+}
+.rojo{
+    color: firebrick;
+}
+
+.formulario{
+	width: 20%;
+    margin: 0 auto;
+	padding: 10px 20px; 
+	background-color: dodgerblue;
+}
+
+.formulario h3, .formulario label, .formulario input, .formulario select{
+	margin-bottom: 10px;
+}
+	
+input, select{
+	width: 90%;
+}
+	
+.enviar{
+	width: 40%;
+}
+
+texarea{
+	width:100%; 
+	float: left;
+}
+
+.ficha-productos td{
+    padding: 5px 10px;
+}
+
+.ficha-productos:nth-child(odd){
+    background-color: #f5faff;
+}
+
+.boleta td{
+    padding: 2px 8px;
+}
+.agregar{
+	background-color:darkblue;
+	padding:5px 10px;
+	float:right;
+	box-shadow:1px 1px 5px black;
+	margin-right:100px;
+	}
+	
+.eliminar{
+	background-color:darkblue;
+	padding:5px 10px;
+	float: left;
+	box-shadow:1px 1px 5px black;
+	margin-left:50px;
+	}
+	
+.modificar{
+	background-color:darkblue;
+	padding:5px 10px;
+	float:right;
+	box-shadow:1px 1px 5px black;
+	margin-right:50px;
+	}
+	
+h2{
+	margin-left:50px;
+		}
+	h3{
+		text-align:center;
+		}

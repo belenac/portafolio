@@ -1,0 +1,620 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,300,700,800|Open+Sans+Condensed:300,700);
+
+*{
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+}
+
+body{
+    font-family: 'Open Sans', sans-serif;
+    color: white;
+    font-size: 1em;
+}
+
+h2, h3, h4{
+    text-align: center;
+    text-shadow: 1px 1px 10px black;
+}
+
+h2{
+    font-weight: 800;
+    font-size: 4em;
+}
+
+h3{
+    font-weight: 800;
+    font-size: 3em;
+}
+
+h4{
+    font-size: 2em;
+    line-height: 1.2;
+}
+
+.seccion{
+    width: 100%;
+    overflow: hidden;
+}
+
+.contenedor{
+    width: 70%;
+    margin: 0 auto;
+}
+/*Columnas*/
+.col-20{
+    width: 20%;
+    float: left;
+}
+
+.col-60{
+    width: 60%;
+    float: left;
+}
+
+/*Principal*/
+#principal{
+    background-image: url(../img/header.jpg);
+    background-size: cover;
+    padding: 13.8% 0;
+}
+
+#principal img{
+    width: 100%;
+}
+
+/*Nav*/
+.menu{
+    position:fixed;
+    top: 0;
+    background-color: #be8600;
+    background-image: url(../img/deco-amarilla.png);
+    background-size: cover;
+    padding: 10px 0;
+    z-index: 100;
+}
+
+.menu figure{
+    width: 20%;
+    float: left;
+}
+
+.menu img{
+    width: 100%;
+}
+
+.menu li{
+    width: 20%;
+    float: left;
+    text-align: center;
+    font-size: 2em;
+    font-weight: 800;
+    margin-top: 20px;
+}
+
+.menu a{
+    color: #660033;
+    text-decoration: none;
+}
+
+.menu a:hover{
+    color: white;
+}
+/*Tandoor*/
+
+.oscuro{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+#tandoor{
+    padding: 144px 0;
+    background-image: url(../img/tandoor.jpg);
+    background-size: cover;
+}
+
+#tandoor h1{
+    color: #be8600;
+    font-weight: 800;
+    font-size: 5em;
+    text-align: center;
+}
+
+#tandoor h4{
+    font-size: 2em;
+    text-align: center;
+    line-height: 1.2;
+}
+
+/*Menu tandoor*/
+
+#menu-tandoor{
+    padding: 120px 0;
+    background-image: url(../img/deco-amarilla.png);
+    background-size: cover;
+    background-position: center;
+}
+
+#menu-tandoor h2{
+    color: #660033;
+    text-shadow: none;
+}
+
+/*Filtro*/
+.menu-filtro{
+    width:100%;
+    min-height: 300px;
+}
+
+.menu-filtro a{
+    float:left;
+    width:16.65%;
+    min-height: 60px;
+    text-decoration:none;
+    text-align:center;
+    padding:6px 10px;
+    color:white;
+    background-color:#be8600;
+    border-left: 1px solid white;
+    border-right: 1px solid white;
+    margin-bottom: 20px;
+}
+
+.menu-filtro div{
+    float:left;
+    width:33.3%;
+    height: 155px;
+    border:1px solid black;
+    -webkit-transition:all .8s ease-in-out;
+    -moz-transition:all .8s ease-in-out;
+    -o-transition:all .8s ease-in-out;
+    -ms-transition:all .8s ease-in-out;
+    transition:all .8s ease-in-out;
+    overflow: hidden;
+}
+
+.menu-filtro div[data-filter="red"]{
+
+
+}
+
+.menu-filtro div[data-filter="green"]{
+
+}
+
+.menu-filtro div[data-filter="blue"]{
+
+}
+
+.menu-filtro div[data-filter="orange"]{
+
+}
+.menu-filtro div[data-filter="violet"]{
+
+}
+
+.menu-filtro a:focus[data-filter]{
+    opacity:.8;
+    outline:none;
+}
+
+.menu-filtro a[data-filter="red"]:focus ~ div:not([data-filter="red"]){
+  height:0px;
+  width:0px;
+  border:none;
+  margin:0;
+}
+
+.menu-filtro a[data-filter="green"]:focus ~ div:not([data-filter="green"]){
+  height:0px;
+  width:0px;
+  border:none;
+  margin:0;
+}
+
+.menu-filtro a[data-filter="blue"]:focus ~ div:not([data-filter="blue"]){
+  height:0px;
+  width:0px;
+  border:none;
+  margin:0;
+}
+.menu-filtro a[data-filter="orange"]:focus ~ div:not([data-filter="orange"]){
+  height:0px;
+  width:0px;
+  border:none;
+  margin:0;
+}
+.menu-filtro a[data-filter="violet"]:focus ~ div:not([data-filter="violet"]){
+  height:0px;
+  width:0px;
+  border:none;
+  margin:0;
+}
+
+.menu-filtro img{
+    width: 100%;
+}
+
+.menu-filtro figure{
+    position: relative;
+    top: 0;
+}
+
+.menu-filtro figcaption{
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 154px;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 8px;
+    text-align: center;
+    color: #be8600;
+    text-shadow: 1px 1px 5px black;
+    opacity: 0;
+    transition: all .8s ease-in-out;
+    -webkit-transition: all .8s ease-in-out;
+}
+
+.menu-filtro figcaption:hover{
+    opacity: 1;
+}
+
+/*Delivery*/
+#delivery{
+    background-color: #660033;
+    background-image: url(../img/deco-blanca.png);
+    background-size: cover;
+    background-position: center;
+    padding: 120px 0;
+    color: #be8600;
+}
+
+#delivery h4{
+    font-size: 2em;
+    text-align: center;
+    line-height: 1.2;
+}
+
+#delivery .form-delivery{
+    width: 90%;
+    margin: 0 auto;
+}
+
+#delivery .input-100{
+    width: 100%;
+}
+#delivery .input-50{
+    width: 49.7%;
+    float: left;
+    margin: 0 1px 3px 1px;
+}
+
+#delivery input{
+    padding: 5px;
+    background-color: black;
+    color: #be8600;
+    font-size: 1.3em;
+    font-weight: 600;
+    border: none;
+    margin-bottom: 3px;
+}
+
+#delivery input[placeholder]{
+    color: #be8600;
+    border: none;
+}
+
+#delivery select{
+    width: 60%;
+    padding: 5px;
+    background-color: black;
+    color: #be8600;
+    font-size: 1.3em;
+    font-weight: 600;
+    border: none;
+    margin-bottom: 3px;
+}
+
+#delivery .pedido{
+    float: right;
+}
+
+/*Contacto*/
+#contacto{
+    padding: 110px 0;
+    background-color:  #be8600;
+    background-image: url(../img/deco-burdeo.png);
+    background-size: cover;
+    background-position: center;
+}
+
+#contacto .form-contacto{
+    width: 90%;
+    margin: 0 auto;
+}
+
+#contacto .input-100{
+    width: 100%;
+}
+#contacto .input-50{
+    width: 49.7%;
+    float: left;
+    margin: 0 1px 3px 1px;
+}
+
+#contacto textarea{
+    width: 100%;
+    height: 200px;
+}
+
+#contacto input, #contacto textarea{
+    padding: 5px;
+    background-color: #660033;
+    color: #be8600;
+    font-size: 1.3em;
+    font-weight: 600;
+    border: none;
+    margin-bottom: 3px;
+}
+
+#contacto .pedido{
+    float: right;
+    padding: 10px 20px;
+    font-size: 1.1em;
+    color: white;
+}
+
+#contacto iframe{
+    width: 100%;
+    height: 300px;
+}
+
+/*Footer*/
+footer{
+    background-image: url(../img/deco-blanca.png);
+    background-size: cover;
+    background-color: #660033;
+    padding: 30px 0;
+}
+
+footer figure{
+    width: 20%;
+    float: left;
+}
+
+footer img{
+    width: 100%;
+}
+
+footer .direccion{
+    text-align: center;
+    font-weight: 600;
+    color: #be8600;
+    text-shadow: 1px 1px 5px black;
+}
+
+/*Otros*/
+.blanco{
+    color: white;
+}
+.azul{
+    color: #2a2a6d;
+}
+
+.celeste{
+    color: #3ca2d0;
+}
+
+.icon{
+    display: none;
+}
+
+.bottom-menu, .mid-menu, .top-menu{
+    background-color: white;
+    width: 25px;
+    height: 3px;
+}
+
+
+/*MediaQuery*/
+@media screen and (max-width:768px){
+    .contenedor{
+        width: 80%;
+    }
+    
+    #principal{
+        padding: 270px 0;
+        background-position: center;
+    }
+    
+    .menu ul{
+        display: none;
+    }
+    
+    .menu figure{
+        width: 25%;
+    }
+    .icon{
+        position: fixed;
+        display: inherit;
+        top: 15px;
+    }
+    
+    #tandoor h4, #delivery h4, #contacto h4{
+      font-size: 1.6em;
+    }
+    
+    #tandoor h1{
+        font-size: 4em;
+    }
+    
+    #menu-tandoor a{
+        width: 50%;
+        margin-bottom: 0;
+        padding-top: 5px;
+        border: 1px solid white;
+    }
+    
+    #menu-tandoor .pading-2{
+        padding-top: 20px;
+    }
+
+    #menu-tandoor div{
+        width: 50%;
+        height: 150px;   
+    }
+
+    #delivery .input-50, #delivery select, #delivery .form-delivery, #contacto .form-contacto, #contacto .input-50{
+        width: 100%;
+    }
+    
+    footer .col-60{
+        width: 50%;
+    }
+    
+     footer figure{
+        width: 50%;
+    }
+    
+    
+    footer .col-20{
+        width: 100%;
+        text-align: center;
+        margin-top: 10px;
+    }
+    
+    .menu-filtro figcaption{
+        width: 100%;
+        height: 150px;
+        padding: 5px;
+    }
+    
+    .menu-filtro figcaption h4{
+        font-size: 1.7em;
+    }
+    
+    .menu-filtro figcaption p{
+        font-size: 1.2em;
+    }
+}
+
+@media screen and (max-width:400px){
+    .contenedor{
+        width: 90%;
+    }
+    
+    #principal{
+        padding: 270px 0;
+        background-position: center;
+    }
+    
+    .menu ul{
+        display: none;
+    }
+    
+    .menu figure{
+        width: 30%;
+    }
+    .icon{
+        position: fixed;
+        display: inherit;
+        top: 5px;
+    }
+    
+    #tandoor h4, #delivery h4, #contacto h4{
+      font-size: 1.6em;
+    }
+    
+    #tandoor h1{
+        font-size: 4em;
+    }
+    
+    #menu-tandoor a{
+        width: 50%;
+        margin-bottom: 0;
+        padding-top: 5px;
+        border: 1px solid white;
+    }
+    
+    #menu-tandoor .pading-2{
+        padding-top: 5px;
+    }
+
+    #menu-tandoor div{
+        width: 50%;
+        height: 102px;   
+    }
+
+    #delivery .input-50, #delivery select, #delivery .form-delivery, #contacto .form-contacto, #contacto .input-50, footer figure, footer .col-60{
+        width: 100%;
+    }
+    footer .col-20{
+        width: 100%;
+        text-align: center;
+        margin-top: 10px;
+    }
+    
+    .menu-filtro figcaption{
+        width: 100%;
+        height: 100px;
+        padding: 5px;
+    }
+    
+    .menu-filtro figcaption h4{
+        font-size: 1.5em;
+    }
+    
+    .menu-filtro figcaption p{
+        display: none;
+    }
+}

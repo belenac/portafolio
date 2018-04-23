@@ -1,0 +1,1 @@
+<h1 class="centro">Tienda Rayitas S.A.</h1>
